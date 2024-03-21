@@ -4,13 +4,13 @@ import { useRef, useState } from "react";
 import Link from "next/link";
 export default function Home() {
   const [activeButton, setActiveButton] = useState<number | null>(null);
-  const nextInputRef = useRef(null);
+  const nextInputRef = useRef<string | null>(null);
 
   const handleClick = (id: number) => {
     setActiveButton(id);
   };
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: string) => {
     const value = e.target.value;
     if (value.length >= 25) {
       nextInputRef.current && nextInputRef.current.focus();
