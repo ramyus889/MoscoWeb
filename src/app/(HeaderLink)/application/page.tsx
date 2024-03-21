@@ -10,12 +10,6 @@ export default function Home() {
     setActiveButton(id);
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    if (value.length >= 25) {
-      nextInputRef.current && nextInputRef.current.focus();
-    }
-  };
   return (
     <>
       <div className="flex items-end  gap-14">
@@ -94,16 +88,9 @@ export default function Home() {
             <input
               type="text"
               placeholder="подробности"
-              onChange={handleInputChange}
               className=" bg-[#020817] w-full border-b-2  outline-none ps-3 text-[#bcc5d0]  placeholder:text-[24px] max-[1440px]:placeholder:text-[18px] placeholder:text-slate-500 placeholder:text-center border-slate-500"
             />
           </label>
-          <input
-            ref={nextInputRef}
-            onChange={handleInputChange}
-            type="text"
-            className="bg-[#020817] w-full border-b-2  outline-none ps-3 text-[#bcc5d0]   border-slate-500"
-          />
         </div>
         <Link
           href="/"
