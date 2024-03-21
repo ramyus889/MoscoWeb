@@ -3,10 +3,10 @@
 import { useRef, useState } from "react";
 import Link from "next/link";
 export default function Home() {
-  const [activeButton, setActiveButton] = useState(null);
+  const [activeButton, setActiveButton] = useState<number | null>(null);
   const nextInputRef = useRef(null);
 
-  const handleClick = (id: string) => {
+  const handleClick = (id: number) => {
     setActiveButton(id);
   };
 
