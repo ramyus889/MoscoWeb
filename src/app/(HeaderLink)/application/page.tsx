@@ -6,7 +6,7 @@ export default function Home() {
   const [activeButton, setActiveButton] = useState(null);
   const nextInputRef = useRef(null);
 
-  const handleClick = (id) => {
+  const handleClick = (id: any) => {
     setActiveButton(id);
   };
 
