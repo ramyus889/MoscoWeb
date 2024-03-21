@@ -6,7 +6,11 @@ import DropDown from "../../componentsUi/DropDown";
 export default function HeadBottom() {
   const pathname = usePathname();
   return (
-    <div className="fixed bottom-0 right-0 left-0 z-[13]">
+    <div
+      className={`fixed bottom-0 right-0 left-0 z-[13] ${
+        pathname === "/application" ? "hidden" : ""
+      }`}
+    >
       <div className="min-[1024px]:hidden mb-7 ms-7 text-[30px]">
         <DropDown />
       </div>

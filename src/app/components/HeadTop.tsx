@@ -1,8 +1,16 @@
 "use client";
+
 import Link from "next/link";
+import React from "react";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 export default function HeadTop() {
+  const [close, setClose] = React.useState(false);
+  const pathname = usePathname();
+  const onClose = () => {
+    setClose(!close);
+  };
   return (
     <header className="pt-10 ps-10 sticky top-0 left-0 w-[500px] z-[15]">
       <div className="flex flex-col gap-8 ">
@@ -38,10 +46,13 @@ export default function HeadTop() {
             rotate: [270],
           }}
           className="inline-block w-[100px] mt-[60px] -ms-[20px]"
+          onClick={onClose}
         >
           <Link
             href="/application"
-            className=" text-[28px] rounded-full py-3 px-5 text-[#444651] border"
+            className={` text-[28px] rounded-full py-3 px-5 text-[#444651] border ${
+              pathname === "/application" ? "hidden" : ""
+            }`}
           >
             Заявка
           </Link>
