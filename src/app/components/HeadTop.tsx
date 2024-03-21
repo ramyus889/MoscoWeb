@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function HeadTop() {
   return (
-    <header className="pt-10 ps-10 sticky top-0">
+    <header className="pt-10 ps-10 sticky top-0 left-0 w-[500px] z-[15]">
       <div className="flex flex-col gap-8 ">
         <Link href="/">
           <svg
