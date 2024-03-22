@@ -19,7 +19,7 @@ export default function CarouselDemo() {
     setSound(!sound);
   };
   return (
-    <Carousel className="bg-transparent w-[40%] max-[750px]:w-[60%] max-[350px]:w-[80%]">
+    <Carousel className="bg-transparent w-[40%] max-[750px]:w-[60%] max-[400px]:w-[110%] ">
       <CarouselContent>
         <CarouselItem>
           <div className="p-1">
@@ -79,8 +79,8 @@ export default function CarouselDemo() {
           </div>
         </CarouselItem>
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="max-[750px]:hidden" />
+      <CarouselNext className="max-[750px]:hidden" />
     </Carousel>
   );
 }

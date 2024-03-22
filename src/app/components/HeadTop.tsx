@@ -12,7 +12,7 @@ export default function HeadTop() {
     setClose(!close);
   };
   return (
-    <header className="pt-10 ps-10 sticky top-0 left-0 w-[500px] z-[15]">
+    <header className="pt-10 ps-10 sticky top-0 left-0 w-[500px] z-[15] ">
       <div className="flex flex-col gap-8 ">
         <Link href="/">
           <svg
@@ -38,14 +38,14 @@ export default function HeadTop() {
             />
           </svg>
         </Link>
-        <div className="text-[#444651] text-[28px]">
+        <div className="text-[#444651] text-[28px] max-[500px]:text-[20px]">
           Помогаем бизнесу выделиться <br /> на рынке © 2023 MoscoWeb
         </div>
         <motion.div
           animate={{
             rotate: [270],
           }}
-          className="inline-block w-[100px] mt-[60px] -ms-[20px]"
+          className="inline-block w-[100px] mt-[60px] max-[500px]:hidden -ms-[20px]"
           onClick={onClose}
         >
           <Link
