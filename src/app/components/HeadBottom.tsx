@@ -7,7 +7,7 @@ export default function HeadBottom() {
   const pathname = usePathname();
   return (
     <div
-      className={`fixed bottom-0 right-0 left-0 z-[13] ${
+      className={`fixed bottom-0 right-0 left-0  max-[500px]:overflow-hidden z-[13] ${
         pathname === "/application" ? "hidden" : ""
       }`}
     >

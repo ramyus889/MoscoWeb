@@ -19,13 +19,13 @@ export default function CarouselDemo() {
     setSound(!sound);
   };
   return (
-    <Carousel className="bg-transparent w-[40%] max-[750px]:w-[60%] max-[400px]:w-[110%] ">
+    <Carousel className="bg-transparent w-[40%] max-[750px]:w-[60%] max-[500px]:w-[80%] max-[500px]:-ms-[20px] ">
       <CarouselContent>
         <CarouselItem>
           <div className="p-1">
             <Card>
               <CardContent className="flex items-center justify-center p-6">
-                <div className="text-[40px] flex gap-10  place-content-center">
+                <div className="text-[40px] flex gap-10 max-[500px]:gap-3  place-content-center">
                   <Image
                     src="/img/card1.png"
                     alt="image"

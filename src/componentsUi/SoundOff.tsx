@@ -8,7 +8,7 @@ export default function Home() {
         height="50"
         viewBox="0 0 50 50"
         fill="none"
-        className="max-[1440px]:w-[26px]"
+        className="max-[1440px]:w-[35px]"
         xmlns="http://www.w3.org/2000/svg"
       >
         <circle opacity="0.2" cx="25" cy="25" r="25" fill="#797D91" />
