@@ -1,92 +1,3 @@
-// import React from "react";
-// import {
-//   Dropdown,
-//   DropdownTrigger,
-//   DropdownMenu,
-//   DropdownItem,
-//   Button,
-// } from "@nextui-org/react";
-// import Link from "next/link";
-// import { usePathname } from "next/navigation";
-// export default function App() {
-//   const pathname = usePathname();
-//   const [open, setOpen] = React.useState(false);
-
-//   const onClickOpen = () => {
-//     setOpen(!open);
-//   };
-//   return (
-//     <Dropdown>
-//       <DropdownTrigger>
-//         <Button variant="bordered" onClick={onClickOpen}>
-//           {open ? "Закрыть" : "Меню"}
-//         </Button>
-//       </DropdownTrigger>
-//       <DropdownMenu aria-label="Static Actions" className="text-[50px] ">
-//         <DropdownItem key="aboutUs">
-//           <Link
-//             href="/aboutUs"
-//             className={` ${
-//               pathname === "/aboutUs" ? "text-white " : "text-slate-500"
-//             }`}
-//           >
-//             О Нас
-//           </Link>
-//         </DropdownItem>
-//         <DropdownItem key="services">
-//           <Link
-//             href="/services"
-//             className={` ${
-//               pathname === "/services" ? "text-white " : "text-slate-500"
-//             }`}
-//           >
-//             Услуги
-//           </Link>
-//         </DropdownItem>
-//         <DropdownItem key="consulting">
-//           <Link
-//             href="/consulting"
-//             className={` ${
-//               pathname === "/consulting" ? "text-white " : "text-slate-500"
-//             }`}
-//           >
-//             Консалтинг
-//           </Link>
-//         </DropdownItem>
-//         <DropdownItem key="brand">
-//           <Link
-//             href="/brand"
-//             className={` ${
-//               pathname === "/brand" ? "text-white " : "text-slate-500"
-//             }`}
-//           >
-//             Бренд инжинеринг
-//           </Link>
-//         </DropdownItem>
-//         <DropdownItem key="case">
-//           <Link
-//             href="/case"
-//             className={` ${
-//               pathname === "/case" ? "text-white " : "text-slate-500"
-//             }`}
-//           >
-//             Кейсы
-//           </Link>
-//         </DropdownItem>
-//         <DropdownItem key="contact">
-//           <Link
-//             href="/contact"
-//             className={` ${
-//               pathname === "/contact" ? "text-white " : "text-slate-500"
-//             }`}
-//           >
-//             Контакты
-//           </Link>
-//         </DropdownItem>
-//       </DropdownMenu>
-//     </Dropdown>
-//   );
-// }
 import React from "react";
 import {
   Dropdown,
@@ -95,12 +6,17 @@ import {
   DropdownItem,
   Button,
 } from "@nextui-org/react";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 export default function App() {
-  const pathName = usePathname();
   const [open, setOpen] = React.useState(false);
+  const [close, setClose] = React.useState(false);
+  const pathname = usePathname();
 
+  const onClose = () => {
+    setClose(!close);
+  };
   const onClickOpen = () => {
     setOpen(!open);
   };
@@ -144,21 +60,23 @@ export default function App() {
           {open ? "Закрыть" : "Меню"}
         </Button>
       </DropdownTrigger>
-      <DropdownMenu aria-label="DynamicActions" items={items}>
-        {(item) => (
-          <DropdownItem key={item.key} textValue={item.label}>
-            <Link
-              onClick={() => setOpen(false)}
-              href={item.href}
-              className={`text-[40px] py-3 px-1 ${
-                pathName === item.href ? "text-white " : "text-slate-500"
-              }`}
-            >
-              {item.label}
-            </Link>
-          </DropdownItem>
-        )}
-      </DropdownMenu>
+      <div className="bg-black h-screen fixed top-0 right-0 left-0 bottom-0  max-[500px]:h-screen max-[500px]:fixed max-[500px]:top-0 max-[500px]:right-0 max-[500px]:left-0 max-[500px]:bottom-0">
+        <DropdownMenu aria-label="DynamicActions" items={items}>
+          {(item) => (
+            <DropdownItem key={item.key} textValue={item.label}>
+              <Link
+                onClick={() => setOpen(false)}
+                href={item.href}
+                className={`text-[40px] py-3 px-1 ${
+                  pathname === item.href ? "text-white " : "text-slate-500"
+                }`}
+              >
+                {item.label}
+              </Link>
+            </DropdownItem>
+          )}
+        </DropdownMenu>
+      </div>
     </Dropdown>
   );
 }

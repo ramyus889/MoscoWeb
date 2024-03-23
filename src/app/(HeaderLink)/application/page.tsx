@@ -20,7 +20,7 @@ export default function Home() {
             <input
               type="text"
               placeholder="введите имя"
-              className=" bg-[#020817] w-full border-b-2 max-[1024px]:text-[35px] py-3 max-[750px]:text-[17px] outline-none ps-3 text-[#bcc5d0]  placeholder:text-[24px] max-[1440px]:placeholder:text-[18px] placeholder:text-slate-500 placeholder:text-center border-slate-500"
+              className=" bg-transparent w-full border-b-2 max-[1024px]:text-[35px] py-3 max-[750px]:text-[17px] outline-none ps-3 text-[#bcc5d0]  placeholder:text-[24px] max-[1440px]:placeholder:text-[18px] placeholder:text-slate-500 placeholder:text-center border-slate-500"
             />
           </label>
           <label className="flex  max-[750px]:flex-col max-[750px]:items-start items-center">
@@ -30,7 +30,7 @@ export default function Home() {
             <input
               type="text"
               placeholder="название организаций"
-              className=" bg-[#020817] w-full border-b-2 max-[1024px]:text-[35px] py-3 max-[750px]:text-[17px] text-[56px] outline-none ps-3 text-[#bcc5d0] max-[1440px]:placeholder:text-[18px] placeholder:text-[24px]  placeholder:text-slate-500 placeholder:text-center border-slate-500"
+              className=" bg-transparent w-full border-b-2 max-[1024px]:text-[35px] py-3 max-[750px]:text-[17px] text-[56px] outline-none ps-3 text-[#bcc5d0] max-[1440px]:placeholder:text-[18px] placeholder:text-[24px]  placeholder:text-slate-500 placeholder:text-center border-slate-500"
             />
           </label>
           <label className="flex gap-4  max-[750px]:flex-col max-[750px]:items-start items-center">
@@ -40,7 +40,7 @@ export default function Home() {
             <input
               type="text"
               placeholder="ребрендинг"
-              className=" bg-[#020817] w-full border-b-2 max-[1024px]:text-[35px] py-3 max-[750px]:text-[17px] outline-none ps-3 text-[#bcc5d0]  placeholder:text-[24px] max-[1440px]:placeholder:text-[18px] placeholder:text-slate-500 placeholder:text-center border-slate-500"
+              className=" bg-transparent w-full border-b-2 max-[1024px]:text-[35px] py-3 max-[750px]:text-[17px] outline-none ps-3 text-[#bcc5d0]  placeholder:text-[24px] max-[1440px]:placeholder:text-[18px] placeholder:text-slate-500 placeholder:text-center border-slate-500"
             />
           </label>
           <div className="flex gap-3 max-[750px]:flex-col max-[750px]:items-start items-center">
@@ -85,7 +85,7 @@ export default function Home() {
             <input
               type="text"
               placeholder="контакты для обратной связи"
-              className=" bg-[#020817] w-full border-b-2 max-[1024px]:text-[35px] py-3 max-[750px]:text-[17px] outline-none ps-3 text-[#bcc5d0]  placeholder:text-[24px] max-[1440px]:placeholder:text-[18px] placeholder:text-slate-500 placeholder:text-center border-slate-500"
+              className=" bg-transparent w-full border-b-2 max-[1024px]:text-[35px] py-3 max-[750px]:text-[17px] outline-none ps-3 text-[#bcc5d0]  placeholder:text-[24px] max-[1440px]:placeholder:text-[18px] placeholder:text-slate-500 placeholder:text-center border-slate-500"
             />
           </label>
           <label className="flex gap-4 max-[750px]:flex-col max-[750px]:items-start items-center">
