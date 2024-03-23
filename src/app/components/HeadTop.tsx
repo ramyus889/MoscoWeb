@@ -38,7 +38,7 @@ export default function HeadTop() {
             />
           </svg>
         </Link>
-        <div className="text-[#444651] text-[28px] max-[500px]:text-[20px]">
+        <div className="text-[#444651] text-[28px] max-[750px]:text-[20px] max-[500px]:text-[20px]">
           Помогаем бизнесу выделиться <br /> на рынке © 2023 MoscoWeb
         </div>
         <motion.div
