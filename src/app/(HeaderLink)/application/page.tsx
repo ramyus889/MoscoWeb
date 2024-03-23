@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <div className="flex items-end  gap-14">
-        <div className="flex flex-col gap-5 w-[1500px] text-[55px] max-[1440px]:text-[48px] max-[1024px]:text-[35px] max-[750px]:-mt-[30px] max-[750px]:w-[700px] max-[750px]:text-[30px]  max-[1024px]:w-[1000px]  max-[1920px]:text-[52px] ps-10">
+        <div className="flex flex-col gap-5 w-[1500px] text-[55px] max-[1440px]:text-[48px] max-[1024px]:text-[35px] max-[750px]:-mt-[50px] max-[500px]:mt-[100px] max-[2000px]:-mt-[70px]  max-[1440px]:-mt-[0px] max-[750px]:w-[700px] max-[500px]:w-[650px] max-[750px]:text-[25px]  max-[1024px]:w-[1000px]  max-[1920px]:text-[52px] ps-10">
           <label className="flex gap-4 max-[750px]:flex-col max-[750px]:items-start items-center ">
             <span className=" w-[900px] max-[1024px]:w-[600px] text-[#bcc5d0]">
               Привет, Меня зовут
@@ -20,7 +20,7 @@ export default function Home() {
             <input
               type="text"
               placeholder="введите имя"
-              className=" bg-[#020817] w-full border-b-2 max-[1024px]:text-[35px] max-[750px]:text-[17px] outline-none ps-3 text-[#bcc5d0]  placeholder:text-[24px] max-[1440px]:placeholder:text-[18px] placeholder:text-slate-500 placeholder:text-center border-slate-500"
+              className=" bg-[#020817] w-full border-b-2 max-[1024px]:text-[35px] py-3 max-[750px]:text-[17px] outline-none ps-3 text-[#bcc5d0]  placeholder:text-[24px] max-[1440px]:placeholder:text-[18px] placeholder:text-slate-500 placeholder:text-center border-slate-500"
             />
           </label>
           <label className="flex  max-[750px]:flex-col max-[750px]:items-start items-center">
@@ -30,7 +30,7 @@ export default function Home() {
             <input
               type="text"
               placeholder="название организаций"
-              className=" bg-[#020817] w-full border-b-2 max-[1024px]:text-[35px] max-[750px]:text-[17px] text-[56px] outline-none ps-3 text-[#bcc5d0] max-[1440px]:placeholder:text-[18px] placeholder:text-[24px]  placeholder:text-slate-500 placeholder:text-center border-slate-500"
+              className=" bg-[#020817] w-full border-b-2 max-[1024px]:text-[35px] py-3 max-[750px]:text-[17px] text-[56px] outline-none ps-3 text-[#bcc5d0] max-[1440px]:placeholder:text-[18px] placeholder:text-[24px]  placeholder:text-slate-500 placeholder:text-center border-slate-500"
             />
           </label>
           <label className="flex gap-4  max-[750px]:flex-col max-[750px]:items-start items-center">
@@ -40,12 +40,12 @@ export default function Home() {
             <input
               type="text"
               placeholder="ребрендинг"
-              className=" bg-[#020817] w-full border-b-2 max-[1024px]:text-[35px] max-[750px]:text-[17px] outline-none ps-3 text-[#bcc5d0]  placeholder:text-[24px] max-[1440px]:placeholder:text-[18px] placeholder:text-slate-500 placeholder:text-center border-slate-500"
+              className=" bg-[#020817] w-full border-b-2 max-[1024px]:text-[35px] py-3 max-[750px]:text-[17px] outline-none ps-3 text-[#bcc5d0]  placeholder:text-[24px] max-[1440px]:placeholder:text-[18px] placeholder:text-slate-500 placeholder:text-center border-slate-500"
             />
           </label>
           <div className="flex gap-3 max-[750px]:flex-col max-[750px]:items-start items-center">
             <span className=" w-[480px]  text-[#bcc5d0]">бюджет проекта</span>
-            <div className="flex gap-2 max-[750px]:gap-8">
+            <div className="flex gap-2 max-[750px]:gap-8 max-[500px]:gap-4">
               <button
                 onClick={() => handleClick(1)}
                 className={`text-[30px] max-[1440px]:text-[23px] max-[1024px]:text-[20px] max-[1920px]:text-[26px] py-[15px] px-[25px] max-[1024px]:py-[10px] max-[1024px]:w-[200px] w-[320px] rounded-full border-2 text-slate-500 ${
@@ -85,7 +85,7 @@ export default function Home() {
             <input
               type="text"
               placeholder="контакты для обратной связи"
-              className=" bg-[#020817] w-full border-b-2 max-[1024px]:text-[35px] max-[750px]:text-[17px] outline-none ps-3 text-[#bcc5d0]  placeholder:text-[24px] max-[1440px]:placeholder:text-[18px] placeholder:text-slate-500 placeholder:text-center border-slate-500"
+              className=" bg-[#020817] w-full border-b-2 max-[1024px]:text-[35px] py-3 max-[750px]:text-[17px] outline-none ps-3 text-[#bcc5d0]  placeholder:text-[24px] max-[1440px]:placeholder:text-[18px] placeholder:text-slate-500 placeholder:text-center border-slate-500"
             />
           </label>
           <label className="flex gap-4 max-[750px]:flex-col max-[750px]:items-start items-center">
@@ -93,12 +93,11 @@ export default function Home() {
               детали
             </span>
             <textarea
-              className="bg-transparent w-full whitespace-pre-wrap border-b-2  max-[750px]:text-[17px] outline-none ps-3 text-[#bcc5d0]  placeholder:text-[24px] max-[1440px]:placeholder:text-[18px] placeholder:text-slate-500 placeholder:text-center border-slate-500"
+              className="bg-transparent resize-none w-full whitespace-pre-wrap border-b-2 max-[750px]:py-3  max-[750px]:placeholder:text-[18px]  max-[750px]:text-[17px] outline-none ps-3 text-[#bcc5d0]  placeholder:text-[24px] max-[1440px]:placeholder:text-[18px] placeholder:text-slate-500 placeholder:text-center border-slate-500"
               name=""
               placeholder="Подробности"
               id=""
-              cols="30"
-              rows="2"
+              rows="1"
             ></textarea>
           </label>
         </div>
