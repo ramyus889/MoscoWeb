@@ -97,7 +97,7 @@ export default function Home() {
               name=""
               placeholder="Подробности"
               id=""
-              rows="1"
+              rows={1}
             ></textarea>
           </label>
         </div>
