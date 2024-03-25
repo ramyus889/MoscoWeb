@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <div className="flex items-end max-[1440px]:gap-8 gap-14">
-        <div className="flex flex-col gap-5 w-[1500px] text-[55px] max-[1440px]:w-[1100px] max-[1440px]:text-[38px] max-[1024px]:text-[35px] max-[750px]:-mt-[50px] max-[500px]:mt-[100px] max-[2000px]:-mt-[70px]  max-[1440px]:-mt-[0px] max-[750px]:w-[700px] max-[500px]:w-[650px] max-[750px]:text-[25px]  max-[1024px]:w-[1000px]  max-[1920px]:text-[52px] ps-10">
+        <div className="flex flex-col gap-5 w-[1500px]  text-[55px] max-[1440px]:w-[1100px] max-[1440px]:text-[38px] max-[1024px]:text-[35px] max-[750px]:-mt-[50px] max-[500px]:mt-[100px] max-[2000px]:-mt-[70px]  max-[1440px]:-mt-[30px] max-[750px]:w-[700px] max-[500px]:w-[650px] max-[750px]:text-[25px]  max-[1024px]:w-[1000px]  max-[1920px]:text-[52px] ps-10">
           <label className="flex gap-4 max-[750px]:flex-col max-[750px]:items-start items-center ">
             <span className=" w-[900px] max-[1024px]:w-[600px] max-[1440px]:w-[600px] text-[#bcc5d0]">
               Привет, Меня зовут

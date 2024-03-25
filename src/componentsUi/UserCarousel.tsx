@@ -19,7 +19,7 @@ export default function CarouselDemo() {
     setSound(!sound);
   };
   return (
-    <Carousel className="bg-transparent w-[40%] max-[750px]:w-[60%] max-[500px]:w-[80%] max-[500px]:-ms-[20px] ">
+    <Carousel className="bg-transparent w-[40%] max-[750px]:w-[60%] max-[500px]:w-[80%] max-[1440px]:-mt-[40px] max-[500px]:-ms-[20px] ">
       <CarouselContent>
         <CarouselItem>
           <div className="p-1">
