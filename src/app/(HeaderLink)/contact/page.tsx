@@ -1,11 +1,21 @@
 "use client";
 import Link from "next/link";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+    });
+  }, []);
   return (
     <div className="">
       <div className="fixed top-0 right-0">
-        <div className="flex flex-col gap-[6px] text-end text-[36px] max-[1024px]:text-[30px] max-[750px]:text-[20px] font-[500] text-[#797D91] mt-[30px] me-10">
+        <div
+          data-aos="zoom-out-down"
+          className="flex flex-col gap-[6px] text-end text-[36px] max-[1024px]:text-[30px] max-[750px]:text-[20px] font-[500] text-[#797D91] mt-[30px] me-10"
+        >
           <Link target="_blank" href="https://www.youtube.com/@agatsarsky">
             Youtube.com
           </Link>
